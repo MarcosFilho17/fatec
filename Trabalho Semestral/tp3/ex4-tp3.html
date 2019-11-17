@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TP 3/4</title>
+</head>
+<body>
+
+<h1>Ordem Crescente</h1>
+<script type="text/javascript">
+<nav id="menu">
+        <ul>
+            <li><a href="../tp1/tp1.html">TP1</a></li>
+            <li><a href="tp2.html">TP2</a></li>
+            <li><a href="../tp3/tp3.html">TP3</a></li>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+        </ul>
+    </nav>
+
+var vet = [10];
+var a;
+
+for(var x = 0; x < 20; x++){
+    vet[x] = parseInt(prompt("Digite um Numero:"));
+    }
+for(var x = 20; x>=0; x--){
+    for(var y = 0; y < 20; y++){
+        if(vet[y] >= vet[y+1]){
+            a = vet[y];
+            vet[y] = vet[y+1];
+            vet [y+1] = a;
+        }
+    }
+}
+
+document.write("Lista em Ordem Crescente: " + "<br>");
+for(var x = 0; x < 20; x++){
+    document.write(vet[x] + "<br>");
+}
+
+
+</script>
+
+
+
+    
+</body>
+</html>
